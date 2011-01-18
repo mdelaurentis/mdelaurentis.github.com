@@ -1,6 +1,6 @@
 ---
-layout: default
-title: Clojure+Emacs
+layout: post
+title: Clojure + Emacs
 ---
 
 Clojure + Emacs

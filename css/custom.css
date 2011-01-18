@@ -1,4 +1,22 @@
 body {
-    font-size: 110%;
+    font-size: 120%;
+}
+
+a {color:#a64e00;text-decoration:none;}
+
+ul.menu {
+    display: inline;
+    list-style: none;
+}
+
+ul.menu li {
+    display: inline;
+    padding-left: 1em;
+}
+
+.figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 

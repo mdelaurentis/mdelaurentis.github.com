@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Computer Vision Project - Mosaicing
-published: false
 ---
 
-Mosaicing
-=========
+Computer Vision Project - Mosaicing
+===================================
 
-Last term I took a class in Computer Vision at Drexel.  It was a really good class with a lot of theory and some interesting programming projects.  One of the projects involved taking a bunch of pictures and writing code in [Processing](http://processing.org) to stitch them together into a 360&deg; panorama.  I've used some open source tools (e.g. [Hugin](http://hugin.sourceforge.net/)) to create panoramas before, and it was interesting to learn about some of the concepts that a tool like that would use.  Anyway, here are the results of the mosaicing project, along with a brief description of the steps involved in making the panoramas.  I should mention that this strategy for creating the mosaics was clearly outlined by the professor, and we were given skeleton code that we filled in with implementations of the algorithms.  So the overall strategy was certainly not my idea, but the images are my own.
+Last term I took an "Intro to Computer Vision" class at Drexel.  It was a really good class with a lot of theory and some interesting programming projects.  One of the projects involved taking a bunch of pictures and writing code in [Processing](http://processing.org) to stitch them together into a 360&deg; panorama.  I've used some open source tools (e.g. [Hugin](http://hugin.sourceforge.net/)) to create panoramas before, and it was interesting to learn about some of the concepts that a tool like that would use.  Anyway, here are the results of the mosaicing project, along with a brief description of the steps involved in making the panoramas.  I should mention that this strategy for creating the mosaics was clearly outlined by the professor, and we were given skeleton code that we filled in with implementations of the algorithms.  So the overall strategy was certainly not my idea, but the images are my own.
+
+My initial goal when writing this was just to plop the images up on the web, since I thought they came out pretty well, but as I was writing this I couldn't help but geek out on some of the concepts that I found most interesting...
 
 Taking pictures
 ---------------
@@ -132,7 +133,7 @@ Then I went back to the house and spent the better part of the next week or two 
 Cylindrical reprojection
 -------------------
 
-Once the pictures were taken, the next step is to warp each picture so we can line it up with its neighbors. It might seem like you could simply slide the images around until they overlap, but it's not quite that easy, because of the way the camera produces the image.  Suppose you have a camera pointed at someone's face.  Imagine that each point on the person's face is connected to the center of the camera's lens with an invisible line.  So now you have this cone of invisible lines starting at the lens and extending out towards the subject's face.  Now if you were to drop a 3x5 index card through that cone a few inches in front of the lens, each of those invisible lines would intersect that card's plane at some point.  So you can figure out where a point in the scene will show up in the image by drawing this imaginary line from the scene, through the card, into the lens.  The spot where the line crosses the card is the spot where the point will render on the image.
+Once the pictures were taken, the next step was to warp each picture so I could write code to line it up with its neighbors. It might seem like you could simply slide the images around until they overlap, but it's not quite that easy, because of the way the camera produces the image.  Suppose you have a camera pointed at someone's face.  Imagine that each point on the person's face is connected to the center of the camera's lens with an invisible line.  So now you have this cone of invisible lines starting at the lens and extending out towards the subject's face.  Now if you were to drop a 3x5 index card through that cone a few inches in front of the lens, each of those invisible lines would intersect that card's plane at some point.  So you can figure out where a point in the scene will show up in the image by drawing this imaginary line from the scene, through the card, into the lens.  The spot where the line crosses the card is the spot where the point will render on the image.
 
 <a href="http://www.flickr.com/photos/mdelaurentis/5327949603/" title="planar image by mdelaurentis, on Flickr"><img class="figure" src="http://farm6.static.flickr.com/5122/5327949603_43dbef2e02_o.png" width="360" height="288" alt="planar image" /></a>
 
@@ -140,11 +141,11 @@ Now the goal of this project is to take the images obtained by swiveling the cam
 
 <a href="http://www.flickr.com/photos/mdelaurentis/5327949659/" title="cylindrical image by mdelaurentis, on Flickr"><img class="figure" src="http://farm6.static.flickr.com/5047/5327949659_4fe14aab4a_o.png" width="288" height="187" alt="cylindrical image" /></a>
 
-However the images we obtained by swiveling the camera around on the tripod are more like this this:
+If we were to simply arrange the planar images around the camera, we'd get something like this:
 
 <a href="http://www.flickr.com/photos/mdelaurentis/5327949645/" title="multiple planar images by mdelaurentis, on Flickr"><img class="figure" src="http://farm6.static.flickr.com/5044/5327949645_fcf90874d1_o.png" width="324" height="198" alt="multiple planar images" /></a>
 
-Notice that this doesn't form a circle, but a weird shape (dodecagon?).  If we want the cylindrical panorama to be nice and smooth, we need to warp each of the original images and re-project each one onto an imaginary image cylindar.  This basically involves taking each point in each original image and calculating a corresponding point on the imaginary cylindar.  In order to do that you need to know the focal length of the camera (basically the distance between the center of projectiona and the magic "index card" we dropped in front of the lens).  I used [this tool](http://www.vision.caltech.edu/bouguetj/calib_doc/) to calibrate the camera. Here's an example of what one of the images looks like before and after warping:
+Notice that this doesn't form a circle, but a weird shape (dodecagon?).  If we want the cylindrical panorama to be nice and smooth, we need to warp each of the original images and re-project each one onto an imaginary image cylinder.  This basically involves taking each point in each original image and calculating a corresponding point on the imaginary cylinder.  In order to do that you need to know the focal length of the camera (basically the distance between the center of projection and the magic "index card" we dropped in front of the lens).  I used [this tool](http://www.vision.caltech.edu/bouguetj/calib_doc/) to calibrate the camera. Here's an example of what one of the images looks like before and after warping:
 
 <div style="text-align: center">
 <a href="http://www.flickr.com/photos/mdelaurentis/5325535459/" title="IMG_1744 by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5242/5325535459_5e0f5d0e87_m.jpg" width="240" height="180" alt="IMG_1744" /></a>
@@ -154,29 +155,55 @@ Notice that this doesn't form a circle, but a weird shape (dodecagon?).  If we w
 
 
 Calculating optical flow
-----------
+------------------------
 
-Once all the images are warped around the imaginary image cylinder, the next step is to compute a translation for each image so that it lines up with its left and right neighbors.  To do this, we used the iterative [Lucas-Kanade method](http://en.wikipedia.org/wiki/Lucas-Kanade_Optical_Flow_Method) for calculating optical flow.  This method basically takes two images and finds finds an optimal translation of one image to make it line up with the other image.  It assumes that the motion between the two images is less than one pixel.  In order to deal with this assumption, we need to reduce the resolution of the images to the point where the motion across the two images actually is less than one pixel.  Then we calculate the optical flow between these two tiny images, then scale the images back up a bit, apply the translation we just computed, and repeat until we're back at the original resolution.
+After I wrote the code to warp the images around the imaginary image cylinder, the next step was to compute a translation for each image so that it lines up with its left and right neighbors.  To do this, I used the iterative [Lucas-Kanade method](http://en.wikipedia.org/wiki/Lucas-Kanade_Optical_Flow_Method) for calculating optical flow.  This method basically takes two images and finds finds an optimal translation of one image to make it line up with the other image. I did this by first creating what's called a Gaussian pyramid of the image, which is a series of images where each one is a reduced-resolution version of the one preceding it. The algorithm operates on the low resolution images first, and then scales the translation up to apply it to the higher resolution images.
 
-Here's an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.  You can see the warped edges of the images here, and it's evident that the warping helps the images line up properly.
+This part of the project required an understanding of how to treat an image as a discrete function mapping (x, y) coordinates to a color intensity value.  I created the Gaussian pyramid by convolving the original image with a discrete approximation of a Gaussian kernel, which basically means creating a new image where each pixel value is a weighted average of the pixel values near the corresponding pixel in the original image, with the closest pixels getting a heavier weight. Then as part of computing the optical flow I convolved the image with vertical and horizontal differential operators to get something like discrete approximations of the partial derivatives of the image.  I vaguely remembered seeing convolution in a calculus class about ten years ago and thinking that it seemed like a completely arbitrary operation made up to confuse students.  It was pretty wild to see it rear its head all over the place in computer vision.  Score one for math.
+
+Anyway, here's an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.  You can see the warped edges of the images here, and it's evident that the warping helps the images line up properly.
 
 <div style="text-align: center">
 <a href="http://www.flickr.com/photos/mdelaurentis/5329186732/" title="river-overlay-4-5 by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5001/5329186732_52762e7967.jpg" width="500" height="257" alt="river-overlay-4-5" /></a>
 </div>
 
-Creating the panoramas
+Stitching, cropping
 -------------------
 
-Once I produced the cylindrical projection of each image and found a translation for each of the adjacent images, the next step is to arrange all the warped images together into a final panorama.  First I created an image that consisted of all the source images together, with the appropriate translations applied.  I used simple linear feathering in the overlapping regions of the images to try to reduce the visibility of the seams.  That process produced an image like this:
+Once I produced the cylindrical projection of each image and found a translation for each of the adjacent images, the next step was to arrange all the warped images together into a final panorama.  First I created an image that consisted of all the source images together, with the appropriate translations applied.  I used simple linear feathering in the overlapping regions of the images to try to reduce the visibility of the seams.  That process produced an image like this:
 
 <a href="http://www.flickr.com/photos/mdelaurentis/5357425746/" title="woods-uncropped by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5249/5357425746_e189deb2e2_b.jpg" width="940" alt="woods-uncropped" /></a>
 
-Notice that the images to the left are significantly lower than the ones to the right.  This was probably caused by one leg of the tripod sinking into the ground a bit while I was taking the photos.  To fix this, I used the translation given by Lucas-Kanade for the left-most and right-most images to skew the image so that it appears horizontal, and then cropped off the outer rows and columns of black pixels.  Here were the results:
+Notice that the images to the left are significantly lower than the ones to the right.  This was probably caused by one leg of the tripod sinking into the ground a bit while I was taking the photos.  To fix this, I used the translation given by Lucas-Kanade for the left-most and right-most images to skew the image so that it appears horizontal, and then cropped off the outer rows and columns of black pixels.
+
+Results
+-------
+
+### Woods ###
 
 <a href="http://www.flickr.com/photos/mdelaurentis/5256795130"><img width="940" src="http://farm6.static.flickr.com/5207/5256795130_5543208792_b.jpg"  /></a>
+This one turned out pretty well, but if you look really closely, you can see some of the seams between the images.
+
+### Trail ###
 <a href="http://www.flickr.com/photos/mdelaurentis/5256795246"><img width="940" src="http://farm6.static.flickr.com/5003/5256795246_3b9448b3cf_b.jpg"  /></a>
+This one came out fine, in that the lighting is consistent and you can't easily identify the seams.
+
+### Creek ###
 <a href="http://www.flickr.com/photos/mdelaurentis/5256795330"><img width="940" src="http://farm6.static.flickr.com/5282/5256795330_852f6bd002_b.jpg"  /></a>
+This one is interesting because there's such a wide variation in lighting.  A few of the images have a clear view of the sky through a clearing, and those are the ones I used to lock the aperture, so the rest of the images came out pretty dark.  I basically did this one specifically to see how big the lighting differences would bee.
+
+### Field ###
+
 <a href="http://www.flickr.com/photos/mdelaurentis/5256795394"><img width="940" src="http://farm6.static.flickr.com/5124/5256795394_0dcb4d1def_b.jpg"  /></a>
+If you look closely at this one you'll see a few errors.  My implementation of Lucas-Kanade didn't do a great job at lining up the images on the left side of the panorama, of the open field.  This is because if you reduce the resolution of the image sufficiently, you're basically left with a horizontal band of green, with a band of brown on top, then a band of blue on top of that.  So it did a good job of lining up the images vertically, but didn't optimally line them up horizontally.
+
+### River ###
+
 <a href="http://www.flickr.com/photos/mdelaurentis/5256795454"><img width="940" src="http://farm6.static.flickr.com/5001/5256795454_c66f7c8d13_b.jpg"  /></a>
+I was pretty happy with this one.
+
+### Kitchen ###
+
 <a href="http://www.flickr.com/photos/mdelaurentis/5256795510"><img width="940" src="http://farm6.static.flickr.com/5127/5256795510_4f173a564e_b.jpg"  /></a>
 
+Shortly before I submitted the project, I realized that I was supposed to take one set of images not using a tripod, I suppose just to see how important it is to keep the center of projection in the same spot.  So I held the camera as steadily as I could in my hands and spun around my kitchen.  It actually came out pretty well.  There's obviously some rotation in a few of the images, but the Lucas-Kanade algorithm did a good job at lining the images up, probably because there's a lot of high-frequency changes; corners and things.

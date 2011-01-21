@@ -2,8 +2,8 @@ body {
     font-size: 120%;
 }
 
-a {color:#a64e00;text-decoration:none;}
-
+a {color:#990000;text-decoration:none;}
+a:focus, a:hover { color: #660000; text-decoration: underline; }
 ul.menu {
     display: inline;
     list-style: none;
@@ -20,3 +20,12 @@ ul.menu li {
     margin-right: auto;
 }
 
+div.footer {
+    color: #bbbbbb;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+div.footer a {
+    color: #aaaaaa;
+}

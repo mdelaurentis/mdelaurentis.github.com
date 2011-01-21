@@ -159,9 +159,7 @@ Calculating optical flow
 
 After I wrote the code to warp the images around the imaginary image cylinder, the next step was to compute a translation for each image so that it lines up with its left and right neighbors.  To do this, I used the iterative [Lucas-Kanade method](http://en.wikipedia.org/wiki/Lucas-Kanade_Optical_Flow_Method) for calculating optical flow.  This method basically takes two images and finds finds an optimal translation of one image to make it line up with the other image. I did this by first creating what's called a Gaussian pyramid of the image, which is a series of images where each one is a reduced-resolution version of the one preceding it. The algorithm operates on the low resolution images first, and then scales the translation up to apply it to the higher resolution images.
 
-This part of the project required an understanding of how to treat an image as a discrete function mapping (x, y) coordinates to a color intensity value.  I created the Gaussian pyramid by convolving the original image with a discrete approximation of a Gaussian kernel, which basically means creating a new image where each pixel value is a weighted average of the pixel values near the corresponding pixel in the original image, with the closest pixels getting a heavier weight. Then as part of computing the optical flow I convolved the image with vertical and horizontal differential operators to get something like discrete approximations of the partial derivatives of the image.  I vaguely remembered seeing convolution in a calculus class about ten years ago and thinking that it seemed like a completely arbitrary operation made up to confuse students.  It was pretty wild to see it rear its head all over the place in computer vision.  Score one for math.
-
-Anyway, here's an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.  You can see the warped edges of the images here, and it's evident that the warping helps the images line up properly.
+Here's an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.  You can see the warped edges of the images here, and it's evident that the warping helps the images line up properly.
 
 <div style="text-align: center">
 <a href="http://www.flickr.com/photos/mdelaurentis/5329186732/" title="river-overlay-4-5 by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5001/5329186732_52762e7967.jpg" width="500" height="257" alt="river-overlay-4-5" /></a>
@@ -181,29 +179,29 @@ Results
 
 ### Woods ###
 
-<a href="http://www.flickr.com/photos/mdelaurentis/5256795130"><img width="940" src="http://farm6.static.flickr.com/5207/5256795130_5543208792_b.jpg"  /></a>
+<a href="http://www.flickr.com/photos/mdelaurentis/5256795130/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5207/5256795130_5543208792_b.jpg"  /></a>
 This one turned out pretty well, but if you look really closely, you can see some of the seams between the images.
 
 ### Trail ###
-<a href="http://www.flickr.com/photos/mdelaurentis/5256795246"><img width="940" src="http://farm6.static.flickr.com/5003/5256795246_3b9448b3cf_b.jpg"  /></a>
+<a href="http://www.flickr.com/photos/mdelaurentis/5256795246/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5003/5256795246_3b9448b3cf_b.jpg"  /></a>
 This one came out fine, in that the lighting is consistent and you can't easily identify the seams.
 
 ### Creek ###
-<a href="http://www.flickr.com/photos/mdelaurentis/5256795330"><img width="940" src="http://farm6.static.flickr.com/5282/5256795330_852f6bd002_b.jpg"  /></a>
-This one is interesting because there's such a wide variation in lighting.  A few of the images have a clear view of the sky through a clearing, and those are the ones I used to lock the aperture, so the rest of the images came out pretty dark.  I basically did this one specifically to see how big the lighting differences would bee.
+<a href="http://www.flickr.com/photos/mdelaurentis/5256795330/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5282/5256795330_852f6bd002_b.jpg"  /></a>
+This one is interesting because there's such a wide variation in lighting.  A few of the images have a clear view of the sky through a clearing, and those are the ones I used to lock the aperture, so the rest of the images came out pretty dark.  I basically did this one specifically to see how big the lighting differences would be.
 
 ### Field ###
 
-<a href="http://www.flickr.com/photos/mdelaurentis/5256795394"><img width="940" src="http://farm6.static.flickr.com/5124/5256795394_0dcb4d1def_b.jpg"  /></a>
+<a href="http://www.flickr.com/photos/mdelaurentis/5256795394/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5124/5256795394_0dcb4d1def_b.jpg"  /></a>
 If you look closely at this one you'll see a few errors.  My implementation of Lucas-Kanade didn't do a great job at lining up the images on the left side of the panorama, of the open field.  This is because if you reduce the resolution of the image sufficiently, you're basically left with a horizontal band of green, with a band of brown on top, then a band of blue on top of that.  So it did a good job of lining up the images vertically, but didn't optimally line them up horizontally.
 
 ### River ###
 
-<a href="http://www.flickr.com/photos/mdelaurentis/5256795454"><img width="940" src="http://farm6.static.flickr.com/5001/5256795454_c66f7c8d13_b.jpg"  /></a>
+<a href="http://www.flickr.com/photos/mdelaurentis/5256795454/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5001/5256795454_c66f7c8d13_b.jpg"  /></a>
 I was pretty happy with this one.
 
 ### Kitchen ###
 
-<a href="http://www.flickr.com/photos/mdelaurentis/5256795510"><img width="940" src="http://farm6.static.flickr.com/5127/5256795510_4f173a564e_b.jpg"  /></a>
+<a href="http://www.flickr.com/photos/mdelaurentis/5256795510/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5127/5256795510_4f173a564e_b.jpg"  /></a>
 
-Shortly before I submitted the project, I realized that I was supposed to take one set of images not using a tripod, I suppose just to see how important it is to keep the center of projection in the same spot.  So I held the camera as steadily as I could in my hands and spun around my kitchen.  It actually came out pretty well.  There's obviously some rotation in a few of the images, but the Lucas-Kanade algorithm did a good job at lining the images up, probably because there's a lot of high-frequency changes; corners and things.
+Shortly before I submitted the project, I realized that I was supposed to take one set of images not using a tripod, I suppose just to see how important it is to keep the center of projection in the same spot.  So I held the camera as steadily as I could in my hands and spun around my kitchen.  It actually came out pretty well.  There's obviously some rotation in a few of the images, but the Lucas-Kanade algorithm did a good job at lining the images up, probably because there are a lot of high-frequency changes; sharp corners and things.

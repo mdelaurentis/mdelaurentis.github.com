@@ -8,8 +8,6 @@ Computer Vision Project - Mosaicing
 
 Last term I took an "Intro to Computer Vision" class at Drexel.  It was a really good class with a lot of theory and some interesting programming projects.  One of the projects involved taking a bunch of pictures and writing code in [Processing](http://processing.org) to stitch them together into a 360&deg; panorama.  I've used some open source tools (e.g. [Hugin](http://hugin.sourceforge.net/)) to create panoramas before, and it was interesting to learn about some of the concepts that a tool like that would use.  Anyway, here are the results of the mosaicing project, along with a brief description of the steps involved in making the panoramas.  I should mention that this strategy for creating the mosaics was clearly outlined by the professor, and we were given skeleton code that we filled in with implementations of the algorithms.  So the overall strategy was certainly not my idea, but the images are my own.
 
-My initial goal when writing this was just to plop the images up on the web, since I thought they came out pretty well, but as I was writing this I couldn't help but geek out on some of the concepts that I found most interesting...
-
 Taking pictures
 ---------------
 
@@ -159,7 +157,7 @@ Calculating optical flow
 
 After I wrote the code to warp the images around the imaginary image cylinder, the next step was to compute a translation for each image so that it lines up with its left and right neighbors.  To do this, I used the iterative [Lucas-Kanade method](http://en.wikipedia.org/wiki/Lucas-Kanade_Optical_Flow_Method) for calculating optical flow.  This method basically takes two images and finds finds an optimal translation of one image to make it line up with the other image. I did this by first creating what's called a Gaussian pyramid of the image, which is a series of images where each one is a reduced-resolution version of the one preceding it. The algorithm operates on the low resolution images first, and then scales the translation up to apply it to the higher resolution images.
 
-Here's an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.  You can see the warped edges of the images here, and it's evident that the warping helps the images line up properly.
+Here's an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.
 
 <div style="text-align: center">
 <a href="http://www.flickr.com/photos/mdelaurentis/5329186732/" title="river-overlay-4-5 by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5001/5329186732_52762e7967.jpg" width="500" height="257" alt="river-overlay-4-5" /></a>
@@ -172,7 +170,7 @@ Once I produced the cylindrical projection of each image and found a translation
 
 <a href="http://www.flickr.com/photos/mdelaurentis/5357425746/" title="woods-uncropped by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5249/5357425746_e189deb2e2_b.jpg" width="940" alt="woods-uncropped" /></a>
 
-Notice that the images to the left are significantly lower than the ones to the right.  This was probably caused by one leg of the tripod sinking into the ground a bit while I was taking the photos.  To fix this, I used the translation given by Lucas-Kanade for the left-most and right-most images to skew the image so that it appears horizontal, and then cropped off the outer rows and columns of black pixels.
+Notice that the images to the left are significantly lower than the ones to the right.  This was probably caused by one leg of the tripod sinking into the ground a bit while I was taking the photos.  To fix this, I used the translation given by Lucas-Kanade for the left-most and right-most images to skew the image so that it appears horizontal.  Then I applied the same translations to black and white masks of the warped images, and used that final mask image to crop off the outer rows and columns of empty pixels.
 
 Results
 -------

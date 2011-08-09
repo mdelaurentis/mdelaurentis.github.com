@@ -11,7 +11,7 @@ Last term I took an "Intro to Computer Vision" class at Drexel.  It was a really
 Taking pictures
 ---------------
 
-The first step was to take a few sets of pictures at different locations.  The first Saturday after the project was assigned was a nice autumn day, so I took my dog Lucy out to Valley Forge and took some pictures there. I parked on Yellow Springs Road, just west of where the covered bridge crosses over a creek next to 252.  There's a trail that starts there, goes up a big hill through the [woods](http://www.flickr.com/photos/mdelaurentis/sets/72157625625222491/), then back down past an old [stone building](http://www.flickr.com/photos/mdelaurentis/sets/72157625750745898/), and then follows a [creek](http://www.flickr.com/photos/mdelaurentis/sets/72157625750837878/) back to the woods.  I stopped and took pictures at a few spots on this trail:
+The first step was to take a few sets of pictures at different locations.  The first Saturday after the project was assigned was a nice autumn day, so I took my dog Lucy out to Valley Forge  and took some pictures there. I parked on Yellow Springs Road, just west of where the covered bridge crosses over a creek next to 252.  There's a trail that starts there, goes up a big hill through the [woods](http://www.flickr.com/photos/mdelaurentis/sets/72157625625222491/), then back down past an old [stone building](http://www.flickr.com/photos/mdelaurentis/sets/72157625750745898/), and then follows a [creek](http://www.flickr.com/photos/mdelaurentis/sets/72157625750837878/) back to the woods.  I stopped and took pictures at a few spots on this trail:
 
 <p>
 <div style="text-align: left">

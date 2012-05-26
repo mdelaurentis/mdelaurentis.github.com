@@ -1,101 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Mike DeLaurentis</title>
-  <meta name="author" content="Mike DeLaurentis">
-
-  
-  <meta name="description" content="After a a couple batches that I wasn&#8217;t totally happy with, I I like this one a lot. Similar creamy mouthfeel to the Rye
-Porter. Pretty dry, not &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://mdelaurentis.com">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Mike DeLaurentis" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Mike DeLaurentis</a></h1>
-  
-    <h2>Software, brewing, etc...</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:mdelaurentis.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Mike DeLaurentis]]></title>
+  <link href="http://mdelaurentis.com/atom.xml" rel="self"/>
+  <link href="http://mdelaurentis.com/"/>
+  <updated>2012-03-03T17:53:49-05:00</updated>
+  <id>http://mdelaurentis.com/</id>
+  <author>
+    <name><![CDATA[Mike DeLaurentis]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2011/10/28/Oatmeal-Stout/">Oatmeal Stout</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2011-10-28T00:00:00-04:00" pubdate data-updated="true">Oct 28<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>After a a couple batches that I wasn&#8217;t totally happy with, I I like this one a lot. Similar creamy mouthfeel to the Rye
+  <entry>
+    <title type="html"><![CDATA[Oatmeal Stout]]></title>
+    <link href="http://mdelaurentis.com/blog/2011/10/28/Oatmeal-Stout/"/>
+    <updated>2011-10-28T00:00:00-04:00</updated>
+    <id>http://mdelaurentis.com/blog/2011/10/28/Oatmeal-Stout</id>
+    <content type="html"><![CDATA[<p>After a a couple batches that I wasn&#8217;t totally happy with, I I like this one a lot. Similar creamy mouthfeel to the Rye
 Porter. Pretty dry, not much hop aroma or flaver. Very nice roasty
 character.</p>
 
@@ -122,42 +45,15 @@ character.</p>
 <h2>Process</h2>
 
 <p>Single infusion mash at 154 &deg;.  Expected water loss due to absorption: 1.5 gal. Total mash/lauter water: 8 gal. Target pre-boil vol: 6.5 gal. Strike vol: 15 lbs x 1.25 quarts/lb = 18.75 -> 19 quarts or 4 3/4 gal. Strike temp: target 169.8. Sparge vol: 3 1/4 gal. Pre-boil: 6.75 gal 1.040.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/09/12/Harvest-Amber/">Harvest Amber</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-09-12T00:00:00-04:00" pubdate data-updated="true">Sep 12<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Brewed with homegrown Cascade hops.</p>
+  <entry>
+    <title type="html"><![CDATA[Harvest Amber]]></title>
+    <link href="http://mdelaurentis.com/blog/2011/09/12/Harvest-Amber/"/>
+    <updated>2011-09-12T00:00:00-04:00</updated>
+    <id>http://mdelaurentis.com/blog/2011/09/12/Harvest-Amber</id>
+    <content type="html"><![CDATA[<p>Brewed with homegrown Cascade hops.</p>
 
 <h2>Grains</h2>
 
@@ -199,42 +95,15 @@ are. Nice mouthfeel. There&#8217;s a little bit of the caramel/banana off
 flavor that showed up in the Belgian strong ale, but it&#8217;s not nearly
 as dominant here. This is not exactly what I was going for, but still
 very enjoyable.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/08/20/Belgian-Strong-Ale/">Belgian Strong Ale</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-08-20T00:00:00-04:00" pubdate data-updated="true">Aug 20<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I originally wanted to make this and add our homegrown raspberries in
+  <entry>
+    <title type="html"><![CDATA[Belgian Strong Ale]]></title>
+    <link href="http://mdelaurentis.com/blog/2011/08/20/Belgian-Strong-Ale/"/>
+    <updated>2011-08-20T00:00:00-04:00</updated>
+    <id>http://mdelaurentis.com/blog/2011/08/20/Belgian-Strong-Ale</id>
+    <content type="html"><![CDATA[<p>I originally wanted to make this and add our homegrown raspberries in
 the secondary fermenter, but there ended up being enough going on with
 the beer that I thought the berries would be too much.</p>
 
@@ -271,42 +140,15 @@ buckets overnight to let the chlorine evaporate.</p>
 <p>Fermented with Wyeast Trappist High Gravity yeast, I think, at a
 pretty high temperature; maybe 75 &deg; or higher. Left in primary for
 a few weeks and then secondary for maybe a month more.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/07/11/Smoked-Rye-Porter/">Smoked Rye Porter</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-07-11T00:00:00-04:00" pubdate data-updated="true">Jul 11<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Brewed for the 2011 Iron Brewer competition sponsored by
+  <entry>
+    <title type="html"><![CDATA[Smoked Rye Porter]]></title>
+    <link href="http://mdelaurentis.com/blog/2011/07/11/Smoked-Rye-Porter/"/>
+    <updated>2011-07-11T00:00:00-04:00</updated>
+    <id>http://mdelaurentis.com/blog/2011/07/11/Smoked-Rye-Porter</id>
+    <content type="html"><![CDATA[<p>Brewed for the 2011 Iron Brewer competition sponsored by
 <a href="keystonehomebrew.com">Keystone Homebrew Supply</a> and
 <a href="thefarmerscabinet.com">The Farmers&#8217; Cabinet</a>. The idea was that they
 give you a &#8220;secret ingredient&#8221;, and you have a few months to make a
@@ -342,42 +184,15 @@ maybe should have used the rye sooner.</p>
 <h2>Process</h2>
 
 <p>Mash all grains for 1 hour at 152&deg;.  Sparge with enough water to collect 6.5 gallons. Pre-boil gravity was 1.044. Bring to a boil, add hops according to schedule above. Cool and pitch yeast. Starting gravity was 1.058, final was 1.019.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/07/04/ESB/">ESB</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-07-04T00:00:00-04:00" pubdate data-updated="true">Jul 4<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This was my first all-grain batch. It was very light in body and
+  <entry>
+    <title type="html"><![CDATA[ESB]]></title>
+    <link href="http://mdelaurentis.com/blog/2011/07/04/ESB/"/>
+    <updated>2011-07-04T00:00:00-04:00</updated>
+    <id>http://mdelaurentis.com/blog/2011/07/04/ESB</id>
+    <content type="html"><![CDATA[<p>This was my first all-grain batch. It was very light in body and
 alcohol. Probably should have used more grains.</p>
 
 <h2>Grains</h2>
@@ -402,42 +217,15 @@ alcohol. Probably should have used more grains.</p>
 <p>Pre-boil: 6.5 gal, 1.029 sg
 Post-boil: 5.5 gal, 1.036 sg
 Final: 1.017 sg</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/16/mosaicing-project/">Computer Vision Project - Mosaicing</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-16T00:00:00-05:00" pubdate data-updated="true">Jan 16<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Computer Vision Project - Mosaicing</h1>
+  <entry>
+    <title type="html"><![CDATA[Computer Vision Project - Mosaicing]]></title>
+    <link href="http://mdelaurentis.com/blog/2011/01/16/mosaicing-project/"/>
+    <updated>2011-01-16T00:00:00-05:00</updated>
+    <id>http://mdelaurentis.com/blog/2011/01/16/mosaicing-project</id>
+    <content type="html"><![CDATA[<h1>Computer Vision Project - Mosaicing</h1>
 
 <p>Last term I took an &#8220;Intro to Computer Vision&#8221; class at Drexel.  It was a really good class with a lot of theory and some interesting programming projects.  One of the projects involved taking a bunch of pictures and writing code in <a href="http://processing.org">Processing</a> to stitch them together into a 360&deg; panorama.  I&#8217;ve used some open source tools (e.g. <a href="http://hugin.sourceforge.net/">Hugin</a>) to create panoramas before, and it was interesting to learn about some of the concepts that a tool like that would use.  Anyway, here are the results of the mosaicing project, along with a brief description of the steps involved in making the panoramas.  I should mention that this strategy for creating the mosaics was clearly outlined by the professor, and we were given skeleton code that we filled in with implementations of the algorithms.  So the overall strategy was certainly not my idea, but the images are my own.</p>
 
@@ -640,42 +428,15 @@ I was pretty happy with this one.</p>
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5256795510/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5127/5256795510_4f173a564e_b.jpg"  /></a></p>
 
 <p>Shortly before I submitted the project, I realized that I was supposed to take one set of images not using a tripod, I suppose just to see how important it is to keep the center of projection in the same spot.  So I held the camera as steadily as I could in my hands and spun around my kitchen.  It actually came out pretty well.  There&#8217;s obviously some rotation in a few of the images, but the Lucas-Kanade algorithm did a good job at lining the images up, probably because there are a lot of high-frequency changes; sharp corners and things.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/03/01/clojure-and-emacs/">Clojure + Emacs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-03-01T00:00:00-05:00" pubdate data-updated="true">Mar 1<span>st</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Clojure + Emacs</h1>
+  <entry>
+    <title type="html"><![CDATA[Clojure + Emacs]]></title>
+    <link href="http://mdelaurentis.com/blog/2010/03/01/clojure-and-emacs/"/>
+    <updated>2010-03-01T00:00:00-05:00</updated>
+    <id>http://mdelaurentis.com/blog/2010/03/01/clojure-and-emacs</id>
+    <content type="html"><![CDATA[<h1>Clojure + Emacs</h1>
 
 <p>There are many different ways of providing Emacs with a Clojure REPL for a project.  A few people have asked me how to do this recently, so I thought I&#8217;d mention the different methods I&#8217;ve used.</p>
 
@@ -700,139 +461,7 @@ I was pretty happy with this one.</p>
 
 
 <p>It took me a long time to realize how great this ability is, but I just had an experience that convinced me of its greatness.  I&#8217;m working on a Compojure application that I&#8217;m using to help with some performance testing of some web services.  Today I had some runtime errors in the Compojure application.  It had been running for a while and had built up some state that I didn&#8217;t want to lose by restarting it.  So I just logged into the machine, fired up Emacs and connected to the swank server, diagnosed the problem, and fixed it, all without restarting the server or losing any state.  Now, you obviously need to be careful not to expose a swank server on a port open to the world.  But assuming you take a few safety measures, your application&#8217;s embedded swank server can save the day.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>About Me</h1>
-  <p>I live in Bridgeport, Pennsylvania with my wife Kate and beagle Lucy.
-I am an independant software contractor with experience in a variety
-of languages and problem domains.  I&#8217;m working on a master&#8217;s in
-Computer Science at Drexel University.  I also play guitar, cook, and
-brew beer.</p>
-<a href="/mdelaurentis-resume.pdf">resume</a>.
-</section>
-<section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2011/10/28/Oatmeal-Stout/">Oatmeal Stout</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/09/12/Harvest-Amber/">Harvest Amber</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/08/20/Belgian-Strong-Ale/">Belgian Strong Ale</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/07/11/Smoked-Rye-Porter/">Smoked Rye Porter</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/07/04/ESB/">ESB</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/mdelaurentis">@mdelaurentis</a> on GitHub
-  
-  <script type="text/javascript">
-    $.domReady(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'mdelaurentis',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("mdelaurentis", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/mdelaurentis" class="twitter-follow-button" data-show-count="false">Follow @mdelaurentis</a>
-  
-</section>
-
-
-
-
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Mike DeLaurentis -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Mike DeLaurentis]]></title>
-  <link href="http://mdelaurentis.com/atom.xml" rel="self"/>
-  <link href="http://mdelaurentis.com/"/>
-  <updated>2012-03-03T17:53:49-05:00</updated>
-  <id>http://mdelaurentis.com/</id>
+  <link href="http://mdelaurentis.github.com/atom.xml" rel="self"/>
+  <link href="http://mdelaurentis.github.com/"/>
+  <updated>2012-05-25T21:23:15-04:00</updated>
+  <id>http://mdelaurentis.github.com/</id>
   <author>
     <name><![CDATA[Mike DeLaurentis]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Oatmeal Stout]]></title>
-    <link href="http://mdelaurentis.com/blog/2011/10/28/Oatmeal-Stout/"/>
+    <link href="http://mdelaurentis.github.com/blog/2011/10/28/Oatmeal-Stout/"/>
     <updated>2011-10-28T00:00:00-04:00</updated>
-    <id>http://mdelaurentis.com/blog/2011/10/28/Oatmeal-Stout</id>
+    <id>http://mdelaurentis.github.com/blog/2011/10/28/Oatmeal-Stout</id>
     <content type="html"><![CDATA[<p>After a a couple batches that I wasn&#8217;t totally happy with, I I like this one a lot. Similar creamy mouthfeel to the Rye
 Porter. Pretty dry, not much hop aroma or flaver. Very nice roasty
 character.</p>
@@ -50,9 +50,9 @@ character.</p>
   
   <entry>
     <title type="html"><![CDATA[Harvest Amber]]></title>
-    <link href="http://mdelaurentis.com/blog/2011/09/12/Harvest-Amber/"/>
+    <link href="http://mdelaurentis.github.com/blog/2011/09/12/Harvest-Amber/"/>
     <updated>2011-09-12T00:00:00-04:00</updated>
-    <id>http://mdelaurentis.com/blog/2011/09/12/Harvest-Amber</id>
+    <id>http://mdelaurentis.github.com/blog/2011/09/12/Harvest-Amber</id>
     <content type="html"><![CDATA[<p>Brewed with homegrown Cascade hops.</p>
 
 <h2>Grains</h2>
@@ -100,9 +100,9 @@ very enjoyable.</p>
   
   <entry>
     <title type="html"><![CDATA[Belgian Strong Ale]]></title>
-    <link href="http://mdelaurentis.com/blog/2011/08/20/Belgian-Strong-Ale/"/>
+    <link href="http://mdelaurentis.github.com/blog/2011/08/20/Belgian-Strong-Ale/"/>
     <updated>2011-08-20T00:00:00-04:00</updated>
-    <id>http://mdelaurentis.com/blog/2011/08/20/Belgian-Strong-Ale</id>
+    <id>http://mdelaurentis.github.com/blog/2011/08/20/Belgian-Strong-Ale</id>
     <content type="html"><![CDATA[<p>I originally wanted to make this and add our homegrown raspberries in
 the secondary fermenter, but there ended up being enough going on with
 the beer that I thought the berries would be too much.</p>
@@ -145,9 +145,9 @@ a few weeks and then secondary for maybe a month more.</p>
   
   <entry>
     <title type="html"><![CDATA[Smoked Rye Porter]]></title>
-    <link href="http://mdelaurentis.com/blog/2011/07/11/Smoked-Rye-Porter/"/>
+    <link href="http://mdelaurentis.github.com/blog/2011/07/11/Smoked-Rye-Porter/"/>
     <updated>2011-07-11T00:00:00-04:00</updated>
-    <id>http://mdelaurentis.com/blog/2011/07/11/Smoked-Rye-Porter</id>
+    <id>http://mdelaurentis.github.com/blog/2011/07/11/Smoked-Rye-Porter</id>
     <content type="html"><![CDATA[<p>Brewed for the 2011 Iron Brewer competition sponsored by
 <a href="keystonehomebrew.com">Keystone Homebrew Supply</a> and
 <a href="thefarmerscabinet.com">The Farmers&#8217; Cabinet</a>. The idea was that they
@@ -189,9 +189,9 @@ maybe should have used the rye sooner.</p>
   
   <entry>
     <title type="html"><![CDATA[ESB]]></title>
-    <link href="http://mdelaurentis.com/blog/2011/07/04/ESB/"/>
+    <link href="http://mdelaurentis.github.com/blog/2011/07/04/ESB/"/>
     <updated>2011-07-04T00:00:00-04:00</updated>
-    <id>http://mdelaurentis.com/blog/2011/07/04/ESB</id>
+    <id>http://mdelaurentis.github.com/blog/2011/07/04/ESB</id>
     <content type="html"><![CDATA[<p>This was my first all-grain batch. It was very light in body and
 alcohol. Probably should have used more grains.</p>
 
@@ -222,9 +222,9 @@ Final: 1.017 sg</p>
   
   <entry>
     <title type="html"><![CDATA[Computer Vision Project - Mosaicing]]></title>
-    <link href="http://mdelaurentis.com/blog/2011/01/16/mosaicing-project/"/>
+    <link href="http://mdelaurentis.github.com/blog/2011/01/16/mosaicing-project/"/>
     <updated>2011-01-16T00:00:00-05:00</updated>
-    <id>http://mdelaurentis.com/blog/2011/01/16/mosaicing-project</id>
+    <id>http://mdelaurentis.github.com/blog/2011/01/16/mosaicing-project</id>
     <content type="html"><![CDATA[<h1>Computer Vision Project - Mosaicing</h1>
 
 <p>Last term I took an &#8220;Intro to Computer Vision&#8221; class at Drexel.  It was a really good class with a lot of theory and some interesting programming projects.  One of the projects involved taking a bunch of pictures and writing code in <a href="http://processing.org">Processing</a> to stitch them together into a 360&deg; panorama.  I&#8217;ve used some open source tools (e.g. <a href="http://hugin.sourceforge.net/">Hugin</a>) to create panoramas before, and it was interesting to learn about some of the concepts that a tool like that would use.  Anyway, here are the results of the mosaicing project, along with a brief description of the steps involved in making the panoramas.  I should mention that this strategy for creating the mosaics was clearly outlined by the professor, and we were given skeleton code that we filled in with implementations of the algorithms.  So the overall strategy was certainly not my idea, but the images are my own.</p>
@@ -306,7 +306,8 @@ Final: 1.017 sg</p>
 
 <p>Then we went north on 252 a bit and made a right into the area where people fly model airplanes.  I took one set of <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625750909834/">images</a> here.  I didn&#8217;t want my car to show up in the images, so I put the tripod on top of it.</p>
 
-<figure>
+<p><figure></p>
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5325469983"><img src="http://farm6.static.flickr.com/5129/5325469983_a4d7794bce_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325470173"><img src="http://farm6.static.flickr.com/5047/5325470173_2294331b5f_t.jpg" style="padding-left: 1em;" /></a>
@@ -315,6 +316,8 @@ Final: 1.017 sg</p>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325471103"><img src="http://farm6.static.flickr.com/5202/5325471103_8459a663f7_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325471327"><img src="http://farm6.static.flickr.com/5206/5325471327_4b875bb6ab_t.jpg" style="padding-left: 1em;" /></a>
 </div>
+
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5325471603"><img src="http://farm6.static.flickr.com/5125/5325471603_f92eb34426_t.jpg" style="padding-left: 1em;" /></a>
 
@@ -325,12 +328,14 @@ Final: 1.017 sg</p>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325472831"><img src="http://farm6.static.flickr.com/5083/5325472831_df02f427a4_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5326080178"><img src="http://farm6.static.flickr.com/5130/5326080178_81a7e8d3f2_t.jpg" style="padding-left: 1em;" /></a>
 </div>
-</figure>
 
+
+<p></figure></p>
 
 <p>The following weekend, Lucy and I went back out to the boat club near Frosty Falls in Bridgeport. There&#8217;s a nice view of the Schuylkill river there, and the leaves were looking pretty nice.</p>
 
-<figure>
+<p><figure></p>
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5326140672"><img src="http://farm6.static.flickr.com/5285/5326140672_b3d8b2d061_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5326140898"><img src="http://farm6.static.flickr.com/5122/5326140898_ea3a73ce62_t.jpg" style="padding-left: 1em;" /></a>
@@ -339,6 +344,8 @@ Final: 1.017 sg</p>
 <a href="http://www.flickr.com/photos/mdelaurentis/5326141788"><img src="http://farm6.static.flickr.com/5086/5326141788_a3ce5ddec8_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325535007"><img src="http://farm6.static.flickr.com/5125/5325535007_5e9eaa2ca1_t.jpg" style="padding-left: 1em;" /></a>
 </div>
+
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5326142428"><img src="http://farm6.static.flickr.com/5285/5326142428_2638daf131_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325535459"><img src="http://farm6.static.flickr.com/5242/5325535459_5e0f5d0e87_t.jpg" style="padding-left: 1em;" /></a>
@@ -347,8 +354,9 @@ Final: 1.017 sg</p>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325536263"><img src="http://farm6.static.flickr.com/5003/5325536263_5e7fb2ae6f_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5326143766"><img src="http://farm6.static.flickr.com/5090/5326143766_09f1d1a582_t.jpg" style="padding-left: 1em;" /></a>
 </div>
-</figure>
 
+
+<p></figure></p>
 
 <p>At each location, I put the camera on a tripod, pointed it at the brightest part of the scene, and locked in the aperture.  This prevents the camera from automatically adjusting the amount of light it lets in.  If I didn&#8217;t do this step, the camera might automatically use different aperture settings for different pictures, which would result in visible differences in lighting across the panorama.  Then I took one picture, turned the camera a little bit to the right, took another picture, and repeated until the camera was back where it started.  With my camera, it took about twelve to fourteen pictures to capture a whole 360&deg; scene.</p>
 
@@ -433,9 +441,9 @@ I was pretty happy with this one.</p>
   
   <entry>
     <title type="html"><![CDATA[Clojure + Emacs]]></title>
-    <link href="http://mdelaurentis.com/blog/2010/03/01/clojure-and-emacs/"/>
+    <link href="http://mdelaurentis.github.com/blog/2010/03/01/clojure-and-emacs/"/>
     <updated>2010-03-01T00:00:00-05:00</updated>
-    <id>http://mdelaurentis.com/blog/2010/03/01/clojure-and-emacs</id>
+    <id>http://mdelaurentis.github.com/blog/2010/03/01/clojure-and-emacs</id>
     <content type="html"><![CDATA[<h1>Clojure + Emacs</h1>
 
 <p>There are many different ways of providing Emacs with a Clojure REPL for a project.  A few people have asked me how to do this recently, so I thought I&#8217;d mention the different methods I&#8217;ve used.</p>

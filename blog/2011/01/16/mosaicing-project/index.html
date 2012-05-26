@@ -9,7 +9,7 @@
   <meta name="author" content="Mike DeLaurentis">
 
   
-  <meta name="description" content="Computer Vision Project - Mosaicing Last term I took an &#8220;Intro to Computer Vision&#8221; class at Drexel. It was a really good class with a lot &hellip;">
+  <meta name="description" content="Computer Vision Project - Mosaicing Last term I took an "Intro to Computer Vision" class at Drexel. It was a really good class with a lot of theory &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mdelaurentis.com/blog/2011/01/16/mosaicing-project">
+  <link rel="canonical" href="http://mdelaurentis.github.com/blog/2011/01/16/mosaicing-project">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -50,7 +50,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:mdelaurentis.com" />
+    <input type="hidden" name="q" value="site:mdelaurentis.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -93,11 +93,11 @@
 
 <div class="entry-content"><h1>Computer Vision Project - Mosaicing</h1>
 
-<p>Last term I took an &#8220;Intro to Computer Vision&#8221; class at Drexel.  It was a really good class with a lot of theory and some interesting programming projects.  One of the projects involved taking a bunch of pictures and writing code in <a href="http://processing.org">Processing</a> to stitch them together into a 360&deg; panorama.  I&#8217;ve used some open source tools (e.g. <a href="http://hugin.sourceforge.net/">Hugin</a>) to create panoramas before, and it was interesting to learn about some of the concepts that a tool like that would use.  Anyway, here are the results of the mosaicing project, along with a brief description of the steps involved in making the panoramas.  I should mention that this strategy for creating the mosaics was clearly outlined by the professor, and we were given skeleton code that we filled in with implementations of the algorithms.  So the overall strategy was certainly not my idea, but the images are my own.</p>
+<p>Last term I took an "Intro to Computer Vision" class at Drexel.  It was a really good class with a lot of theory and some interesting programming projects.  One of the projects involved taking a bunch of pictures and writing code in <a href="http://processing.org">Processing</a> to stitch them together into a 360&deg; panorama.  I've used some open source tools (e.g. <a href="http://hugin.sourceforge.net/">Hugin</a>) to create panoramas before, and it was interesting to learn about some of the concepts that a tool like that would use.  Anyway, here are the results of the mosaicing project, along with a brief description of the steps involved in making the panoramas.  I should mention that this strategy for creating the mosaics was clearly outlined by the professor, and we were given skeleton code that we filled in with implementations of the algorithms.  So the overall strategy was certainly not my idea, but the images are my own.</p>
 
 <h2>Taking pictures</h2>
 
-<p>The first step was to take a few sets of pictures at different locations.  The first Saturday after the project was assigned was a nice autumn day, so I took my dog Lucy out to Valley Forge  and took some pictures there. I parked on Yellow Springs Road, just west of where the covered bridge crosses over a creek next to 252.  There&#8217;s a trail that starts there, goes up a big hill through the <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625625222491/">woods</a>, then back down past an old <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625750745898/">stone building</a>, and then follows a <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625750837878/">creek</a> back to the woods.  I stopped and took pictures at a few spots on this trail:</p>
+<p>The first step was to take a few sets of pictures at different locations.  The first Saturday after the project was assigned was a nice autumn day, so I took my dog Lucy out to Valley Forge  and took some pictures there. I parked on Yellow Springs Road, just west of where the covered bridge crosses over a creek next to 252.  There's a trail that starts there, goes up a big hill through the <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625625222491/">woods</a>, then back down past an old <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625750745898/">stone building</a>, and then follows a <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625750837878/">creek</a> back to the woods.  I stopped and took pictures at a few spots on this trail:</p>
 
 <p>
 <div style="text-align: left">
@@ -170,9 +170,10 @@
 </p>
 
 
-<p>Then we went north on 252 a bit and made a right into the area where people fly model airplanes.  I took one set of <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625750909834/">images</a> here.  I didn&#8217;t want my car to show up in the images, so I put the tripod on top of it.</p>
+<p>Then we went north on 252 a bit and made a right into the area where people fly model airplanes.  I took one set of <a href="http://www.flickr.com/photos/mdelaurentis/sets/72157625750909834/">images</a> here.  I didn't want my car to show up in the images, so I put the tripod on top of it.</p>
 
-<figure>
+<p><figure></p>
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5325469983"><img src="http://farm6.static.flickr.com/5129/5325469983_a4d7794bce_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325470173"><img src="http://farm6.static.flickr.com/5047/5325470173_2294331b5f_t.jpg" style="padding-left: 1em;" /></a>
@@ -181,6 +182,8 @@
 <a href="http://www.flickr.com/photos/mdelaurentis/5325471103"><img src="http://farm6.static.flickr.com/5202/5325471103_8459a663f7_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325471327"><img src="http://farm6.static.flickr.com/5206/5325471327_4b875bb6ab_t.jpg" style="padding-left: 1em;" /></a>
 </div>
+
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5325471603"><img src="http://farm6.static.flickr.com/5125/5325471603_f92eb34426_t.jpg" style="padding-left: 1em;" /></a>
 
@@ -191,12 +194,14 @@
 <a href="http://www.flickr.com/photos/mdelaurentis/5325472831"><img src="http://farm6.static.flickr.com/5083/5325472831_df02f427a4_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5326080178"><img src="http://farm6.static.flickr.com/5130/5326080178_81a7e8d3f2_t.jpg" style="padding-left: 1em;" /></a>
 </div>
-</figure>
 
 
-<p>The following weekend, Lucy and I went back out to the boat club near Frosty Falls in Bridgeport. There&#8217;s a nice view of the Schuylkill river there, and the leaves were looking pretty nice.</p>
+<p></figure></p>
 
-<figure>
+<p>The following weekend, Lucy and I went back out to the boat club near Frosty Falls in Bridgeport. There's a nice view of the Schuylkill river there, and the leaves were looking pretty nice.</p>
+
+<p><figure></p>
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5326140672"><img src="http://farm6.static.flickr.com/5285/5326140672_b3d8b2d061_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5326140898"><img src="http://farm6.static.flickr.com/5122/5326140898_ea3a73ce62_t.jpg" style="padding-left: 1em;" /></a>
@@ -205,6 +210,8 @@
 <a href="http://www.flickr.com/photos/mdelaurentis/5326141788"><img src="http://farm6.static.flickr.com/5086/5326141788_a3ce5ddec8_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325535007"><img src="http://farm6.static.flickr.com/5125/5325535007_5e9eaa2ca1_t.jpg" style="padding-left: 1em;" /></a>
 </div>
+
+
 <div style="text-align: left">
 <a href="http://www.flickr.com/photos/mdelaurentis/5326142428"><img src="http://farm6.static.flickr.com/5285/5326142428_2638daf131_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5325535459"><img src="http://farm6.static.flickr.com/5242/5325535459_5e0f5d0e87_t.jpg" style="padding-left: 1em;" /></a>
@@ -213,16 +220,17 @@
 <a href="http://www.flickr.com/photos/mdelaurentis/5325536263"><img src="http://farm6.static.flickr.com/5003/5325536263_5e7fb2ae6f_t.jpg" style="padding-left: 1em;" /></a>
 <a href="http://www.flickr.com/photos/mdelaurentis/5326143766"><img src="http://farm6.static.flickr.com/5090/5326143766_09f1d1a582_t.jpg" style="padding-left: 1em;" /></a>
 </div>
-</figure>
 
 
-<p>At each location, I put the camera on a tripod, pointed it at the brightest part of the scene, and locked in the aperture.  This prevents the camera from automatically adjusting the amount of light it lets in.  If I didn&#8217;t do this step, the camera might automatically use different aperture settings for different pictures, which would result in visible differences in lighting across the panorama.  Then I took one picture, turned the camera a little bit to the right, took another picture, and repeated until the camera was back where it started.  With my camera, it took about twelve to fourteen pictures to capture a whole 360&deg; scene.</p>
+<p></figure></p>
+
+<p>At each location, I put the camera on a tripod, pointed it at the brightest part of the scene, and locked in the aperture.  This prevents the camera from automatically adjusting the amount of light it lets in.  If I didn't do this step, the camera might automatically use different aperture settings for different pictures, which would result in visible differences in lighting across the panorama.  Then I took one picture, turned the camera a little bit to the right, took another picture, and repeated until the camera was back where it started.  With my camera, it took about twelve to fourteen pictures to capture a whole 360&deg; scene.</p>
 
 <p>Then I went back to the house and spent the better part of the next week or two writing the code for the project.</p>
 
 <h2>Cylindrical reprojection</h2>
 
-<p>Once the pictures were taken, the next step was to warp each picture so I could write code to line it up with its neighbors. It might seem like you could simply slide the images around until they overlap, but it&#8217;s not quite that easy, because of the way the camera produces the image.  Suppose you have a camera pointed at someone&#8217;s face.  Imagine that each point on the person&#8217;s face is connected to the center of the camera&#8217;s lens with an invisible line.  So now you have this cone of invisible lines starting at the lens and extending out towards the subject&#8217;s face.  Now if you were to drop a 3x5 index card through that cone a few inches in front of the lens, each of those invisible lines would intersect that card&#8217;s plane at some point.  So you can figure out where a point in the scene will show up in the image by drawing this imaginary line from the scene, through the card, into the lens.  The spot where the line crosses the card is the spot where the point will render on the image.</p>
+<p>Once the pictures were taken, the next step was to warp each picture so I could write code to line it up with its neighbors. It might seem like you could simply slide the images around until they overlap, but it's not quite that easy, because of the way the camera produces the image.  Suppose you have a camera pointed at someone's face.  Imagine that each point on the person's face is connected to the center of the camera's lens with an invisible line.  So now you have this cone of invisible lines starting at the lens and extending out towards the subject's face.  Now if you were to drop a 3x5 index card through that cone a few inches in front of the lens, each of those invisible lines would intersect that card's plane at some point.  So you can figure out where a point in the scene will show up in the image by drawing this imaginary line from the scene, through the card, into the lens.  The spot where the line crosses the card is the spot where the point will render on the image.</p>
 
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5327949603/" title="planar image by mdelaurentis, on Flickr"><img class="figure" src="http://farm6.static.flickr.com/5122/5327949603_43dbef2e02_o.png" width="360" height="288" alt="planar image" /></a></p>
 
@@ -230,11 +238,11 @@
 
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5327949659/" title="cylindrical image by mdelaurentis, on Flickr"><img class="figure" src="http://farm6.static.flickr.com/5047/5327949659_4fe14aab4a_o.png" width="288" height="187" alt="cylindrical image" /></a></p>
 
-<p>If we were to simply arrange the planar images around the camera, we&#8217;d get something like this:</p>
+<p>If we were to simply arrange the planar images around the camera, we'd get something like this:</p>
 
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5327949645/" title="multiple planar images by mdelaurentis, on Flickr"><img class="figure" src="http://farm6.static.flickr.com/5044/5327949645_fcf90874d1_o.png" width="324" height="198" alt="multiple planar images" /></a></p>
 
-<p>Notice that this doesn&#8217;t form a circle, but a weird shape (dodecagon?).  If we want the cylindrical panorama to be nice and smooth, we need to warp each of the original images and re-project each one onto an imaginary image cylinder.  This basically involves taking each point in each original image and calculating a corresponding point on the imaginary cylinder.  In order to do that you need to know the focal length of the camera (basically the distance between the center of projection and the magic &#8220;index card&#8221; we dropped in front of the lens).  I used <a href="http://www.vision.caltech.edu/bouguetj/calib_doc/">this tool</a> to calibrate the camera. Here&#8217;s an example of what one of the images looks like before and after warping:</p>
+<p>Notice that this doesn't form a circle, but a weird shape (dodecagon?).  If we want the cylindrical panorama to be nice and smooth, we need to warp each of the original images and re-project each one onto an imaginary image cylinder.  This basically involves taking each point in each original image and calculating a corresponding point on the imaginary cylinder.  In order to do that you need to know the focal length of the camera (basically the distance between the center of projection and the magic "index card" we dropped in front of the lens).  I used <a href="http://www.vision.caltech.edu/bouguetj/calib_doc/">this tool</a> to calibrate the camera. Here's an example of what one of the images looks like before and after warping:</p>
 
 <div style="text-align: center">
 <a href="http://www.flickr.com/photos/mdelaurentis/5325535459/" title="IMG_1744 by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5242/5325535459_5e0f5d0e87_m.jpg" width="240" height="180" alt="IMG_1744" /></a>
@@ -245,9 +253,9 @@
 
 <h2>Calculating optical flow</h2>
 
-<p>After I wrote the code to warp the images around the imaginary image cylinder, the next step was to compute a translation for each image so that it lines up with its left and right neighbors.  To do this, I used the iterative <a href="http://en.wikipedia.org/wiki/Lucas-Kanade_Optical_Flow_Method">Lucas-Kanade method</a> for calculating optical flow.  This method basically takes two images and finds finds an optimal translation of one image to make it line up with the other image. I did this by first creating what&#8217;s called a Gaussian pyramid of the image, which is a series of images where each one is a reduced-resolution version of the one preceding it. The algorithm operates on the low resolution images first, and then scales the translation up to apply it to the higher resolution images.</p>
+<p>After I wrote the code to warp the images around the imaginary image cylinder, the next step was to compute a translation for each image so that it lines up with its left and right neighbors.  To do this, I used the iterative <a href="http://en.wikipedia.org/wiki/Lucas-Kanade_Optical_Flow_Method">Lucas-Kanade method</a> for calculating optical flow.  This method basically takes two images and finds finds an optimal translation of one image to make it line up with the other image. I did this by first creating what's called a Gaussian pyramid of the image, which is a series of images where each one is a reduced-resolution version of the one preceding it. The algorithm operates on the low resolution images first, and then scales the translation up to apply it to the higher resolution images.</p>
 
-<p>Here&#8217;s an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.</p>
+<p>Here's an example of two of the warped images lined up according to the translation given by the Lucas-Kanade method.</p>
 
 <div style="text-align: center">
 <a href="http://www.flickr.com/photos/mdelaurentis/5329186732/" title="river-overlay-4-5 by mdelaurentis, on Flickr"><img src="http://farm6.static.flickr.com/5001/5329186732_52762e7967.jpg" width="500" height="257" alt="river-overlay-4-5" /></a>
@@ -272,17 +280,17 @@ This one turned out pretty well, but if you look really closely, you can see som
 <h3>Trail</h3>
 
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5256795246/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5003/5256795246_3b9448b3cf_b.jpg"  /></a>
-This one came out fine, in that the lighting is consistent and you can&#8217;t easily identify the seams.</p>
+This one came out fine, in that the lighting is consistent and you can't easily identify the seams.</p>
 
 <h3>Creek</h3>
 
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5256795330/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5282/5256795330_852f6bd002_b.jpg"  /></a>
-This one is interesting because there&#8217;s such a wide variation in lighting.  A few of the images have a clear view of the sky through a clearing, and those are the ones I used to lock the aperture, so the rest of the images came out pretty dark.  I basically did this one specifically to see how big the lighting differences would be.</p>
+This one is interesting because there's such a wide variation in lighting.  A few of the images have a clear view of the sky through a clearing, and those are the ones I used to lock the aperture, so the rest of the images came out pretty dark.  I basically did this one specifically to see how big the lighting differences would be.</p>
 
 <h3>Field</h3>
 
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5256795394/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5124/5256795394_0dcb4d1def_b.jpg"  /></a>
-If you look closely at this one you&#8217;ll see a few errors.  My implementation of Lucas-Kanade didn&#8217;t do a great job at lining up the images on the left side of the panorama, of the open field.  This is because if you reduce the resolution of the image sufficiently, you&#8217;re basically left with a horizontal band of green, with a band of brown on top, then a band of blue on top of that.  So it did a good job of lining up the images vertically, but didn&#8217;t optimally line them up horizontally.</p>
+If you look closely at this one you'll see a few errors.  My implementation of Lucas-Kanade didn't do a great job at lining up the images on the left side of the panorama, of the open field.  This is because if you reduce the resolution of the image sufficiently, you're basically left with a horizontal band of green, with a band of brown on top, then a band of blue on top of that.  So it did a good job of lining up the images vertically, but didn't optimally line them up horizontally.</p>
 
 <h3>River</h3>
 
@@ -293,7 +301,7 @@ I was pretty happy with this one.</p>
 
 <p><a href="http://www.flickr.com/photos/mdelaurentis/5256795510/sizes/o"><img width="940" src="http://farm6.static.flickr.com/5127/5256795510_4f173a564e_b.jpg"  /></a></p>
 
-<p>Shortly before I submitted the project, I realized that I was supposed to take one set of images not using a tripod, I suppose just to see how important it is to keep the center of projection in the same spot.  So I held the camera as steadily as I could in my hands and spun around my kitchen.  It actually came out pretty well.  There&#8217;s obviously some rotation in a few of the images, but the Lucas-Kanade algorithm did a good job at lining the images up, probably because there are a lot of high-frequency changes; sharp corners and things.</p>
+<p>Shortly before I submitted the project, I realized that I was supposed to take one set of images not using a tripod, I suppose just to see how important it is to keep the center of projection in the same spot.  So I held the camera as steadily as I could in my hands and spun around my kitchen.  It actually came out pretty well.  There's obviously some rotation in a few of the images, but the Lucas-Kanade algorithm did a good job at lining the images up, probably because there are a lot of high-frequency changes; sharp corners and things.</p>
 </div>
 
 
@@ -324,7 +332,7 @@ I was pretty happy with this one.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mdelaurentis.com/blog/2011/01/16/mosaicing-project/" data-via="mdelaurentis" data-counturl="http://mdelaurentis.com/blog/2011/01/16/mosaicing-project/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mdelaurentis.github.com/blog/2011/01/16/mosaicing-project/" data-via="mdelaurentis" data-counturl="http://mdelaurentis.github.com/blog/2011/01/16/mosaicing-project/" >Tweet</a>
   
   
   

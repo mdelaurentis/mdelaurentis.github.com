@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://mdelaurentis.com/blog/2010/03/01/clojure-and-emacs">
+  <link rel="canonical" href="http://mdelaurentis.github.com/blog/2010/03/01/clojure-and-emacs">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -50,7 +50,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:mdelaurentis.com" />
+    <input type="hidden" name="q" value="site:mdelaurentis.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -93,7 +93,7 @@
 
 <div class="entry-content"><h1>Clojure + Emacs</h1>
 
-<p>There are many different ways of providing Emacs with a Clojure REPL for a project.  A few people have asked me how to do this recently, so I thought I&#8217;d mention the different methods I&#8217;ve used.</p>
+<p>There are many different ways of providing Emacs with a Clojure REPL for a project.  A few people have asked me how to do this recently, so I thought I'd mention the different methods I've used.</p>
 
 <h2>Shell script</h2>
 
@@ -102,20 +102,20 @@
 <script src="https://gist.github.com/319031.js"> </script>
 
 
-<p>Then from within Emacs you can start up slime by doing <code>M-- M-x slime</code>, and then selecting the name for the repl to start up.  I used this method for a while, but it&#8217;s not very portable, and it requires changing your .emacs setup every time you want to add a repl.  I would not recommend this way.</p>
+<p>Then from within Emacs you can start up slime by doing <code>M-- M-x slime</code>, and then selecting the name for the repl to start up.  I used this method for a while, but it's not very portable, and it requires changing your .emacs setup every time you want to add a repl.  I would not recommend this way.</p>
 
 <h2>Build tool</h2>
 
-<p>With the advent of <a href="http://github.com/technomancy/leiningen">Leiningen</a> and the <a href="http://github.com/talios/clojure-maven-plugin">clojure-maven-plugin</a>, it has become much easier to start up a swank server on the command line and then <code>M-x slime-connect</code> to it from within Emacs.  If your project uses Leiningen, just type <code>lein swank</code> at the command line (you&#8217;ll need a :dev-dependency on swank-clojure for this to work).  If you&#8217;re using the Maven plugin, run <code>mvn clojure:swank</code>.  Then in Emacs, run <code>M-x slime-connect</code>.  Hit enter through the host and port prompts, and it should connect you to the swank server you started up on the command line.</p>
+<p>With the advent of <a href="http://github.com/technomancy/leiningen">Leiningen</a> and the <a href="http://github.com/talios/clojure-maven-plugin">clojure-maven-plugin</a>, it has become much easier to start up a swank server on the command line and then <code>M-x slime-connect</code> to it from within Emacs.  If your project uses Leiningen, just type <code>lein swank</code> at the command line (you'll need a :dev-dependency on swank-clojure for this to work).  If you're using the Maven plugin, run <code>mvn clojure:swank</code>.  Then in Emacs, run <code>M-x slime-connect</code>.  Hit enter through the host and port prompts, and it should connect you to the swank server you started up on the command line.</p>
 
 <h2>Embedded</h2>
 
-<p>If you&#8217;re working on a long-running application, you may want to consider embedding a swank server in your program itself.  It&#8217;s remarkably <a href="http://gist.github.com/319031">easy</a>.</p>
+<p>If you're working on a long-running application, you may want to consider embedding a swank server in your program itself.  It's remarkably <a href="http://gist.github.com/319031">easy</a>.</p>
 
 <script src="http://gist.github.com/319031.js"> </script>
 
 
-<p>It took me a long time to realize how great this ability is, but I just had an experience that convinced me of its greatness.  I&#8217;m working on a Compojure application that I&#8217;m using to help with some performance testing of some web services.  Today I had some runtime errors in the Compojure application.  It had been running for a while and had built up some state that I didn&#8217;t want to lose by restarting it.  So I just logged into the machine, fired up Emacs and connected to the swank server, diagnosed the problem, and fixed it, all without restarting the server or losing any state.  Now, you obviously need to be careful not to expose a swank server on a port open to the world.  But assuming you take a few safety measures, your application&#8217;s embedded swank server can save the day.</p>
+<p>It took me a long time to realize how great this ability is, but I just had an experience that convinced me of its greatness.  I'm working on a Compojure application that I'm using to help with some performance testing of some web services.  Today I had some runtime errors in the Compojure application.  It had been running for a while and had built up some state that I didn't want to lose by restarting it.  So I just logged into the machine, fired up Emacs and connected to the swank server, diagnosed the problem, and fixed it, all without restarting the server or losing any state.  Now, you obviously need to be careful not to expose a swank server on a port open to the world.  But assuming you take a few safety measures, your application's embedded swank server can save the day.</p>
 </div>
 
 
@@ -146,7 +146,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mdelaurentis.com/blog/2010/03/01/clojure-and-emacs/" data-via="mdelaurentis" data-counturl="http://mdelaurentis.com/blog/2010/03/01/clojure-and-emacs/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mdelaurentis.github.com/blog/2010/03/01/clojure-and-emacs/" data-via="mdelaurentis" data-counturl="http://mdelaurentis.github.com/blog/2010/03/01/clojure-and-emacs/" >Tweet</a>
   
   
   
